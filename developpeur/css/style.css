@@ -1,0 +1,536 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+
+#logoMenu {
+    width : 100px;
+}
+
+.navbar {
+    background-color: #000000;
+}
+
+
+.collapse {
+    margin-right: 160px;
+}
+
+.collapse ul a {
+    text-align: left;
+}
+
+.navbar-nav li a {
+    color: white !important;
+    font-family: adobe-garamond-pro, serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-left: 20px;
+}
+
+.navbar-toggler {
+    outline: none !important;
+}
+
+/* Zoom image de l'accueil */
+
+.accueil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/fond-page-accueil.jpg);
+    background-position: center;
+    overflow: hidden;
+    color: transparent;
+}
+
+.image {
+    transform: scale(1.2);
+    animation: dezoom 2s linear forwards
+}
+
+section {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+@keyframes dezoom {
+    from {
+        transform: scale(7);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
+
+/* Section entreprise */
+
+#entreprise {
+    justify-items: left;
+    background: white;
+    font-family: adobe-garamond-pro, serif;
+    background: url(../images/page-histoire.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 77%;
+}
+
+#entreprise2 {
+    text-align: center;
+    font-family: adobe-garamond-pro, serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titreEntreprise {
+ padding-top:30px ;
+ letter-spacing: 3px;
+ text-transform: uppercase;
+ word-spacing: 4px;
+}
+
+.texteEntreprise {
+ text-align: justify;
+}
+
+#entreprise .row {
+    width: 100%;
+    height: 100vh;
+}
+
+/* MONTRE */
+
+#montre {
+    font-family: adobe-garamond-pro, serif;
+    height: 100vh;
+    background-color: black;
+}
+
+#montre .watch {
+    margin-top: 10%;
+}
+
+#montre .cadran {
+    margin-left: -450px;
+    margin-top: 14%;
+}
+
+#montre p {
+    max-width: 850px;
+    color: white;
+}
+
+#montre h2 {
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 4px;
+    color: white;
+    word-spacing: 4px;
+}
+
+#montre .limit {
+    max-width: 500px;
+    border: 1px solid #c89f65;
+    position: relative;
+    background: black;
+    padding: 8px 22px;
+}
+
+#montre .limit span {
+    font-weight: 100;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 10px;
+    color: #c89f65;
+    
+}
+.text-base {
+    opacity: 1;
+   
+ }
+
+ .text-hover{
+    display:none;
+
+ }
+
+ #montre .limit:hover .text-base{
+    opacity:0;
+
+ }
+
+ #montre .limit:hover .text-hover{
+    display:inherit;
+    position:absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+ }
+
+#montre .galery {
+    width: 190px;
+    background: white;
+    color: black;
+    border: 0.5px solid rgba(0, 0, 0, 0.37);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.534);
+    transition: all 0.3s ease-in;
+    outline: none;
+    padding: 2px 22px;
+}
+
+#montre .galery:hover {
+    box-shadow: none;
+    background: black;
+    border: 0.5px solid white;
+    color: white;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.541);
+}
+
+/* section technologie */
+
+.technologie{
+    height: 100%;  
+}
+
+#texteTechno {
+    font-family: adobe-garamond-pro, serif;
+}
+
+.texteMecanisme {
+    padding-top: 100px;
+    font-family: adobe-garamond-pro, serif;
+}
+
+.technologie h2{
+    font-family: adobe-garamond-pro, serif;
+    padding-top:30px ;
+    padding-bottom: 15px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    word-spacing: 4px;
+}
+
+.technologie h3{
+    font-family: adobe-garamond-pro, serif;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.technologie h3:after{
+    display: block;
+    height: 2px;
+    background-color: #a9904a;
+    width: 250px;
+    content: " ";
+    margin-bottom: 30px;
+}
+
+.chronographe{
+    display: block;
+    margin: 0 auto 70px;
+}
+
+.info-technique{
+    display: block;
+    justify-content: center;
+}
+
+.info-technique ul{
+    list-style: none;
+}
+
+.info-technique ul li{
+    padding-bottom: 30px;
+}
+
+/* MODAL */
+
+.modal {
+    font-family: adobe-garamond-pro, serif;
+    max-width: 900px;
+    max-height: 800px;
+    margin-left: 20%;
+}
+
+.modal .grey {
+    filter: grayscale(100%);
+    transition: all 0.6 linear;
+}
+
+.modal .grey:hover {
+    filter: grayscale(0);
+}
+
+/* Mentions légales */
+.copyright {
+text-align: center;
+display: block;
+float: left;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+    
+}
+
+footer a:hover {
+    color: rgb(223, 199, 67);
+}
+
+ul {
+ text-align: center;
+}
+
+/*********** icones resaux sociaux*************/
+
+footer ul li {
+    display: block;
+    float: left;
+   
+    font-size: 22px;
+    list-style: none;
+    padding-left: 3%;
+}
+
+/************** CONTACT  *************/
+
+.boutique {
+    margin-top: 45px;
+}
+
+.contact {
+    background-color: #000;
+    color: #fff;
+    height: auto;
+    font-family: adobe-garamond-pro, serif;
+    text-transform: uppercase;
+    margin-top: 95px;
+    width: 100%;
+}
+
+.contact h2{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 4px;
+    color: white;
+    word-spacing: 4px;
+}
+
+.contact h3{
+    font-weight: 500;
+    margin-top: 30px;
+    padding: 20px 0;
+}
+
+.contactBouton{
+    color: #a9904a;
+    background-color: black;
+    border: 0.5px solid #a9904a;
+    padding: 7px 50px 5px 50px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.coordonnees{
+    padding: 10px 0 30px;
+}
+
+.coordonnees a {
+    color : white;
+}
+
+.coordonnees ul li {
+    list-style: none;
+    float: left;
+}
+
+.coordonnees ul li a {
+    color: rgb(180, 165, 80);
+}
+
+.coordonnees ul li a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.coordonnees i{
+    color: #a9904a;
+    padding: 0 10px;
+    float: left;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.coordonnees p {
+ text-align: left;
+}
+
+.social{
+    text-align: center;
+}
+.social ul li{
+    display: inline;
+    text-align: center;
+    list-style: none;
+    outline: none !important;
+}
+
+.social .btn{
+    color: #a9904a;
+    padding: 20px;
+    font-size: 50px;
+    outline: none !important;
+}
+
+.social .btn:hover{
+    color: #fff;
+}
+
+.boutique img{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+#contact-form{
+    padding: 40px;
+}
+ /************ formulaire ************/
+
+.form-control{
+    height: 30px;
+}
+
+.comments{
+    font-size: 0.5em;
+}
+
+#contact-form input[type=submit]{
+    margin: 0 auto;
+    display: block;
+}
+
+.contact .button{
+    border: 1px solid #ddd;
+    background: #a9904a;
+    color: #fff;
+    width: 40%;
+    text-transform: uppercase;
+    padding: 12px;
+}
+
+.contact .button:hover
+{
+    background: #c2986e;
+    border-color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+
+    /* @ MEDIA ACCUEIL */
+
+  .accueil .image {
+       margin-left: -50px;
+    }
+
+/* MONTRE */
+
+    #montre .cadran {
+        max-width: 30%;
+        margin: 40px 0 0 -20px;
+    }
+
+   /* #montre .col-lg-6 {
+
+    } */
+
+    #montre .watch {
+        width: 90%;
+    }
+
+    #montre .much {
+        display: none;
+    }
+
+    #montre .text-base {
+       opacity: 0;
+     }
+
+     .text-hover{
+        display:inherit;
+        position:absolute;
+        top: -5px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+     }
+
+     #montre .limit {
+        max-width: 320px;
+        height: 30px;
+        position: relative;
+        background: black;
+    }
+
+    #montre .galery {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    /* MODAL */
+
+    .modal {
+        width: 350px;
+        height: auto;
+        margin: 0 auto !important;
+    }
+
+
+    /* ENTREPRISE */
+
+    #entreprise2 {
+        margin-right: 60px;
+    }
+
+    .technologie .chronographe{
+        display: block;
+        margin: 0 auto;
+    }
+
+}
+
+/* FOOTER */
+
+footer {
+    color: white;
+    background: #000000;
+    font-family: adobe-garamond-pro, serif;
+    font-size: 14px;
+    height: 5%;
+    padding: 12px 0 5px;
+}
