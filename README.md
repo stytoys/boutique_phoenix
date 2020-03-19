@@ -2,4 +2,4 @@
 
 group project
 
-https://stytoys.github.io/boutique_phoenix/
+https://stytoys.github.io/boutique_phoenix/developpeur/
